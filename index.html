@@ -2,3 +2,63 @@
 <a href="/test/contact">contact</a>
 
 <h1>내 생에 첫 홈페이지</h1>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변슬기 | 개인 브랜드 및 프로젝트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="./" class="logo">SEULGI BYUN</a> 
+            <nav class="nav-links">
+                <a href="./">메인</a>
+                <a href="about/">소개</a>
+                <a href="contact/">문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section-block" style="background-color: var(--background-light); padding: 60px 30px; text-align: center; border: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);">
+            <h1 style="border-bottom: none; font-size: 3rem; margin-bottom: 0.2em;">
+                데이터를 통한 가치 창출, <br> **변슬기**와 함께 시작하세요.
+            </h1>
+            <p style="font-size: 1.3rem; color: var(--text-medium); max-width: 800px; margin: 20px auto;">
+                명료하고 신뢰할 수 있는 인사이트로 당신의 프로젝트를 성공적으로 이끌겠습니다.
+            </p>
+            <a href="contact/" class="cta-button">강연/협업 문의하기</a>
+        </section>
+
+        <section>
+            <h2>주요 활동 분야</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="section-block">
+                    <h3 style="font-size: 1.3rem; color: var(--main-blue);">데이터 분석 및 시각화</h3>
+                    <p style="font-size: 1rem;">복잡한 데이터를 명확하게 해석하고, 이해하기 쉬운 시각화 자료로 제공합니다.</p>
+                </div>
+                <div class="section-block">
+                    <h3 style="font-size: 1.3rem; color: var(--main-blue);">웹 프론트엔드 개발</h3>
+                    <p style="font-size: 1rem;">가독성과 사용성을 최우선으로 고려한, 반응형 웹사이트를 개발합니다.</p>
+                </div>
+                <div class="section-block">
+                    <h3 style="font-size: 1.3rem; color: var(--main-blue);">맞춤형 강연 및 교육</h3>
+                    <p style="font-size: 1rem;">실무 중심의 데이터/IT 교육을 제공하여 즉시 활용 가능한 지식을 전수합니다.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>변슬기 개인 브랜드 페이지 | E-mail: your.email@example.com</p>
+        <p>Copyright &copy; <span id="current-year"></span> SEULGI BYUN. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
