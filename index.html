@@ -3,6 +3,157 @@
 
 <h1>내 생에 첫 홈페이지</h1>
 
+/* styles.css */
+:root {
+    /* 부산시청의 신뢰감을 주는 블루 계열 색상을 참고 */
+    --main-blue: #004d99;          /* 주 색상 (진한 파랑) */
+    --accent-blue: #007bff;        /* 강조 색상 (밝은 파랑) */
+    --background-light: #f8f9fa;   /* 배경 (매우 밝은 회색) */
+    --text-dark: #212529;          /* 어두운 텍스트 색상 */
+    --text-medium: #6c757d;        /* 중간 텍스트/정보 색상 */
+    --border-color: #dee2e6;       /* 경계선 색상 */
+    --font-primary: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    --max-width: 1140px;           /* 콘텐츠 최대 너비 (넓은 가독성 확보) */
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.7; /* 가독성을 위한 높은 줄 간격 */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* 메인 배경은 흰색 */
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 네비게이션 바 */
+.header {
+    background-color: var(--main-blue);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* 메인 콘텐츠 영역 */
+.container {
+    max-width: var(--max-width);
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* 제목 스타일 - 명확하고 깔끔하게 */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-blue);
+    margin-bottom: 0.8em;
+    border-bottom: 3px solid var(--accent-blue);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.05rem; /* 본문 가독성 확보 */
+    margin-bottom: 1.5em;
+    color: var(--text-dark);
+}
+
+/* 액션 버튼 */
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-blue);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: var(--main-blue);
+}
+
+/* 섹션 구분 */
+.section-block {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* 푸터 */
+.footer {
+    background-color: var(--background-light);
+    border-top: 1px solid var(--border-color);
+    padding: 30px 0;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-medium);
+}
+
+/* 미디어 쿼리 (모바일 반응형) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links a {
+        margin: 0 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .container {
+        margin: 30px auto;
+    }
+}
 <!DOCTYPE html>
 <html lang="ko">
 <head>
