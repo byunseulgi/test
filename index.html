@@ -1,4 +1,35 @@
-<a href="/test/about">about</a>
-<a href="/test/contact">contact</a>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지 - Simple Landing</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">SLG</a> <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="./about/">About</a>
+                <a href="./contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<h1>내 생에 첫 홈페이지</h1>
+    <main class="content-section">
+        <h1>새로운 아이디어로 당신의 프로젝트를 완성하세요.</h1>
+        <p>미니멀하고 세련된 디자인으로 사용자에게 최고의 경험을 제공합니다.</p>
+        
+        <a href="./about/" class="btn btn-primary">더 알아보기</a>
+        <a href="./contact/" class="btn btn-secondary">지금 문의하기</a>
+        
+        <img src="placeholder-hero.jpg" alt="Minimalist design concept" class="hero-image">
+    </main>
+
+    <footer class="footer">
+        © 2025 SLG. All rights reserved. | <span id="current-year-info"></span>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,48 @@
-<a href="/test/about">about</a>
-<a href="/test/contact">contact</a>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 페이지 - About</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">SLG</a>
+            <nav class="nav-links">
+                <a href="../">Home</a>
+                <a href="./">About</a> <a href="../contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<h1>About</h1>
+    <main class="content-section">
+        <h2>우리의 미션</h2>
+        <p>우리는 기술과 디자인의 완벽한 조화를 추구하며, 복잡한 문제를 단순함으로 해결하는 것을 목표로 합니다. 사용자 중심의 접근 방식으로 가치를 창출합니다.</p>
+
+        <h2>핵심 가치</h2>
+        <div style="display: flex; justify-content: space-around; max-width: 800px; margin: 0 auto; text-align: left;">
+            <div style="width: 30%;">
+                <h3 style="font-weight: 600; margin-bottom: 5px;">단순함</h3>
+                <p style="font-size: 0.9rem;">최고의 디자인은 단순함에서 나옵니다.</p>
+            </div>
+            <div style="width: 30%;">
+                <h3 style="font-weight: 600; margin-bottom: 5px;">혁신</h3>
+                <p style="font-size: 0.9rem;">끊임없이 새로운 것을 탐구합니다.</p>
+            </div>
+            <div style="width: 30%;">
+                <h3 style="font-weight: 600; margin-bottom: 5px;">완성도</h3>
+                <p style="font-size: 0.9rem;">세밀한 부분까지 놓치지 않습니다.</p>
+            </div>
+        </div>
+        
+        <a href="../contact/" class="btn btn-primary" style="margin-top: 30px;">팀원 만나보기</a>
+    </main>
+
+    <footer class="footer">
+        © 2025 SLG. All rights reserved. | <span id="current-year-info"></span>
+    </footer>
+</body>
+</html>
